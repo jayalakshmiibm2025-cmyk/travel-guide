@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide</title>
+    <link rel="stylesheet" href="travel guide.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#itinerary">Itinerary</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to the Travel Guide</h1>
+        <p>Your ultimate travel companion to explore the world!</p>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <img src="paris.jpg" alt="Paris">
+            <h3>Paris</h3>
+            <p>The City of Lights is known for its romantic ambiance, amazing food, and rich culture.</p>
+        </div>
+        <div class="destination">
+            <img src="tokyo.jpg" alt="Tokyo">
+            <h3>Tokyo</h3>
+            <p>A vibrant city where tradition meets modernity. Famous for its technology, fashion, and food.</p>
+        </div>
+        <!-- Add more destinations here -->
+    </section>
+
+    <!-- Itinerary Section -->
+    <section id="itinerary">
+        <h2>Your Customized Itinerary</h2>
+        <form id="itinerary-form">
+            <label for="destination">Choose your destination:</label>
+            <select id="destination">
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="new_york">New York</option>
+            </select>
+            <button type="button" onclick="generateItinerary()">Get Itinerary</button>
+        </form>
+        <div id="itinerary-result"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel Guide</p>
+    </footer>
+
+    <script src="travel guide.javascript"></script>
+</body>
+</html>
